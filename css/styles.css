@@ -1,0 +1,53 @@
+:root {
+    --primary-text-color-main: #212121;
+    --secondary-text-color-main: #757575;
+    --primary-text-color-opposit: #FFFFFF;
+    --secondary-text-color-opposit: rgba(255, 255, 255, 0.6);
+    --color-accent: #2196F3;
+    --primary-background-color-main: #F5F5F5;
+    --secondary-background-color-main: #FFFFFF;
+    --secondary-background-color-next: #F5F4FA;
+    --secondary-background-color-opposit: #2F303A;
+}
+
+body {
+    font-family: "roboto";
+    background-color: var(--primary-background-color-main);
+    color: var(--primary-text-color-main);
+}
+
+ul {
+    list-style: none;
+}
+
+
+.logo-blue,
+.logo-black {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--color-accent);
+}
+
+.logo-black {
+    color: #000000
+}
+
+.button {
+    background-color: var(--color-accent);
+    color: var(--primary-text-color-opposit);
+}
+
+/* чорний основний #212121 */
+/* чорний другорядний #757575 */
+/* білий основний #FFFFFF */
+/* білий другорядний rgba(255, 255, 255, 0.6) */
+/* синій #2196F3 */
+
+/* основний колір фону білий #F5F5F5 */
+/* другорядний колір фону білий #FFFFFF */
+/* другорядний колір фону сірий #F5F4FA */
+/* другорядний колір фону чорний #2F303A */
