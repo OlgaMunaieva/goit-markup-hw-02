@@ -3,9 +3,9 @@
     --secondary-text-color-main: #757575;
     --primary-text-color-opposit: #FFFFFF;
     --secondary-text-color-opposit: rgba(255, 255, 255, 0.6);
+    --logo-color: #000000;
     --color-accent: #2196F3;
-    --primary-background-color-main: #F5F5F5;
-    --secondary-background-color-main: #FFFFFF;
+    --primary-background-color-main: #FFFFFF;
     --secondary-background-color-next: #F5F4FA;
     --secondary-background-color-opposit: #2F303A;
 }
@@ -15,7 +15,6 @@ body {
     color: var(--primary-text-color-main);
     background-color: var(--primary-background-color-main);
     font-size: 14px;
-    line-height: calc(16 / 14);
     letter-spacing: 0.03em;
 }
 
@@ -58,12 +57,12 @@ body {
 }
 
 .nav>.logo {
-    color: #000000;
+    color: var(--logo-color);
 }
 
 .nav-link {
-    font-family: inherit;
     font-weight: 500;
+    line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--primary-text-color-main);
 }
@@ -101,6 +100,12 @@ body {
 }
 
 .hero-btn {
+    font-family: inherit;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
     color: var(--primary-text-color-opposit);
     background-color: var(--color-accent);
 }
@@ -123,6 +128,7 @@ body {
 
 .features-item-title {
     font-size: 14px;
+    line-height: 1.14;
     text-transform: uppercase;
 }
 
@@ -136,7 +142,7 @@ body {
 
 .doing-title {
     font-size: 36px;
-    line-height: calc(42 / 36);
+    line-height: 1.17;
     text-align: center;
 }
 
@@ -153,7 +159,7 @@ body {
 
 .team-title {
     font-size: 36px;
-    line-height: calc(42 / 36);
+    line-height: 1.17;
     text-align: center;
 }
 
@@ -161,18 +167,21 @@ body {
 
 .list {}
 
-.team-item {}
+.team-item {
+    background-color: var(--primary-background-color-main);
+}
 
 .team-item-title {
     font-weight: 500;
     font-size: 16px;
-    line-height: calc(19 / 16);
+    line-height: 1.19;
     /* identical to box height */
     text-align: center;
 }
 
 .team-item-job {
-    line-height: calc(19 / 16);
+    font-size: 16px;
+    line-height: 1.19;
     /* identical to box height */
     text-align: center;
     color: var(--secondary-text-color-main);
@@ -191,6 +200,7 @@ body {
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
+    background-color: var(--secondary-background-color-next);
     color: var(--primary-text-color-main);
 }
 
@@ -237,9 +247,13 @@ body {
     color: var(--secondary-text-color-opposit);
 }
 
+.address-contacts-link[target] {
+    color: var(--primary-text-color-opposit);
+}
+
 .address-contacts-link:hover,
 .address-contacts-link:focus {
-    color: var(--primary-text-color-opposit);
+    color: var(--color-accent);
 }
 
 .address-item {}
