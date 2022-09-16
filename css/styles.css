@@ -147,7 +147,9 @@ body {
 .doing-item {}
 
 /* ------------------------------------ СТУДІЯ Наша команда -------------------- */
-.team {}
+.team {
+    background-color: var(--secondary-background-color-next);
+}
 
 .team-title {
     font-size: 36px;
