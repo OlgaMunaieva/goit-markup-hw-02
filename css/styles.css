@@ -105,6 +105,11 @@ body {
     background-color: var(--color-accent);
 }
 
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: #188CE8;
+}
+
 /* ------------------------------------ СТУДІЯ Наші переваги -------------------- */
 .features {}
 
